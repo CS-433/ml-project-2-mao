@@ -15,12 +15,13 @@ import urllib
 import matplotlib.image as mpimg
 from PIL import Image
 
-import code
+import code 
 
 import tensorflow.python.platform
 
 import numpy
 import tensorflow as tf
+
 
 NUM_CHANNELS = 3  # RGB images
 PIXEL_DEPTH = 255
@@ -235,6 +236,7 @@ def main(argv=None):  # pylint: disable=unused-argument
             c1 = c1 + 1
     print("Number of data points per class: c0 = " + str(c0) + " c1 = " + str(c1))
 
+    # Taking as many background points as road points
     print("Balancing training data...")
     min_c = min(c0, c1)
     idx0 = [i for i, j in enumerate(train_labels) if j[0] == 1]
@@ -254,6 +256,7 @@ def main(argv=None):  # pylint: disable=unused-argument
             c0 = c0 + 1
         else:
             c1 = c1 + 1
+    # Normally, c0 = c1 now
     print("Number of data points per class: c0 = " + str(c0) + " c1 = " + str(c1))
 
     # This is where training samples and labels are fed to the graph.
