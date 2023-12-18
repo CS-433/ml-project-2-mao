@@ -219,6 +219,25 @@ def extract_labels(filename, num_images):
     # Convert to dense 1-hot representation.
     return labels.astype(np.float32)
 
+def get_images(filename,num_images):
+    """
+    Function to extract the training images (or mask) from the appropriate folder into a list of tensors. 
+    Arguments: 
+    filename: "training_path_from_which_to_extract"
+    num_images: the number of images (or masks) we want to extract from the file (max 100)
+    """
+    imgs = []
+    for i in range(1, num_images + 1):
+        imageid = "satImage_%.3d" % i
+        image_filename = filename + imageid + ".png"
+        if os.path.isfile(image_filename):
+            print("Loading " + image_filename)
+            img = mpimg.imread(image_filename)
+            imgs.append(img)
+        else:
+            print("File " + image_filename + " does not exist")
+    return imgs
+
 
 ############################################ PROCESS THE DATA FOR MODELS #########################################################
 def img_crop(im, w, h):

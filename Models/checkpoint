@@ -1,0 +1,2 @@
+model_checkpoint_path: "from_A32B"
+all_model_checkpoint_paths: "from_A32B"
