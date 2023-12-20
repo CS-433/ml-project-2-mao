@@ -59,6 +59,15 @@ The project is structured as follows:
 |__ unets_with_data_augmentation.ipynb
 ```
 
+### **File description** :
+**run.py**: Script that loads our best model and generate a submission file for AICrowd. <br>
+**helpers.py**: Contains functions used for loading and processing the data. <br>
+**utils.py**: Contains utility functions such as metrics for evaluating models, functions for processing the data and functions for visualisation. <br>
+**models.py**: Contains the implementation of our models described in the report.pdf. <br>
+**data_augmentation.py**: Contains the functions used for augmenting the training images. <br>
+**basic_models.ipynb**: Notebook where we trained our first models. <br>
+**unets_no_data_augmentation.ipynb**: Notebook where we trained our U-Nets on the original training data. <br>
+**unets_with_data_augmentation.ipynb**: Notebook where we trained our U-Net on the augmented training data.
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
