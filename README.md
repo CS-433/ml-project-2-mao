@@ -25,6 +25,10 @@ To get a local copy up and running follow these simple example steps.
 
 Run the script ```run.py```, it will create a file ```submission.csv``` to be submitted in AICrowd. 
 
+### Training
+
+If you want to try training the models on your own, you can simply run the notebook corresponding to the model you want to train. You can see in the Project Structure part the different notebooks we created.
+
 <!-- PROJECT STRUCTURE -->
 ## Project Structure
 
