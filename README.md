@@ -54,6 +54,7 @@ The project is structured as follows:
 |__ data_augmentation.py
 |__ requirement.txt
 |
+|__ data_exploration.ipynb
 |__ basic_models.ipynb
 |__ unets_no_data_augmentation.ipynb
 |__ unets_with_data_augmentation.ipynb
@@ -65,6 +66,7 @@ The project is structured as follows:
 **utils.py**: Contains utility functions such as metrics for evaluating models, functions for processing the data and functions for visualisation. <br>
 **models.py**: Contains the implementation of our models described in the report.pdf. <br>
 **data_augmentation.py**: Contains the functions used for augmenting the training images. <br>
+**data_exploration.ipynb**: Notebook where we conducted our data exploration. <br>
 **basic_models.ipynb**: Notebook where we trained our first models. <br>
 **unets_no_data_augmentation.ipynb**: Notebook where we trained our U-Nets on the original training data. <br>
 **unets_with_data_augmentation.ipynb**: Notebook where we trained our U-Net on the augmented training data.
